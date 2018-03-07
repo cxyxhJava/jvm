@@ -41,6 +41,11 @@ public class Stack {
 
     }
 
+
+
+    static{
+
+    }
     
     public static void main(String[] args){
         Stack stack = new Stack();
@@ -52,6 +57,16 @@ public class Stack {
         System.out.println(stack.pop().data);
         System.out.println(stack.pop().data);
 
+
+        while (true){
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            JVMTest test = new JVMTest();
+            test.start();
+        }
     }
 
 }
